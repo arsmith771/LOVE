@@ -1,0 +1,11 @@
+/*.editor-block-list__layout,*/
+
+
+#toplevel_page_toolset-dashboard, 
+#genesis_inpost_layout_box,
+#genesis_inpost_scripts_box,
+.wp-media-buttons,
+#dashboard_primary,
+#dashboard_quick_press {
+	display: none;
+}

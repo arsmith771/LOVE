@@ -1,0 +1,101 @@
+/* Footer Widgets
+-------------------------------------------------- */
+.footer-widgets {
+	clear: both;
+	padding: 60px 0;
+	border-top: $border-width $border-style $border-color;
+	background-color: $footer-widgets--background-color;
+	font-size: $footer-widgets--font-size;
+
+	.wrap {
+		margin-right: auto;
+		margin-left: auto;
+
+		@media only screen and (min-width: $standard-screen-width) {
+			max-width: 1140px;
+		}
+	}
+
+	.widget:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.footer-widget-area {
+	margin-bottom: 40px;
+	padding-right: 30px;
+	padding-left: 30px;
+
+	@media only screen and (min-width: $standard-screen-width) {
+		float: left;
+		width: 33.33%; /* fallback for older browsers */
+		width: calc(100% / 3);
+		margin-bottom: 0;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+/* Site Footer
+--------------------------------------------------- */
+
+#cookie-law-info-bar{
+	a{
+		display: inline-block;
+		&:first-child {
+			clear:left;	
+			@media only screen and (min-width: $standard-screen-width) {
+				clear:none;
+			}
+		}
+	}
+}
+
+.site-footer {
+	padding: 170px 30px 100px 30px;
+	background-color: #2D2926;
+	background-image: url('data:image/svg+xml;charset=UTF-8, <svg id="a62d2ac2-b04d-4b52-8f9d-51f4416fa69e" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 178.72 45.7"><defs><style>.a2c58b65-a9aa-44dc-92c5-407aa1e240b0{fill:none;}.a300c973-1827-41fc-bec1-aeee56cbd398{clip-path:url(%23ee586d84-9dd1-47ca-a980-36547ece31a6);}.b50518ab-c729-4e98-9e36-1f2037a88c44{fill:%232D2926;}.e7a7566c-d4b6-47d3-a51a-e902b7fbcd00{fill:%23fff;}</style><clipPath id="ee586d84-9dd1-47ca-a980-36547ece31a6"><rect class="a2c58b65-a9aa-44dc-92c5-407aa1e240b0" x="-550.49" y="-3524.94" width="1280" height="5600"/></clipPath></defs><title>Artboard 20</title><g class="a300c973-1827-41fc-bec1-aeee56cbd398"><rect class="b50518ab-c729-4e98-9e36-1f2037a88c44" x="-550.49" y="-81.35" width="1280" height="542"/><rect class="e7a7566c-d4b6-47d3-a51a-e902b7fbcd00" x="134.01" y="1.49" width="42.97" height="12.24"/><rect class="e7a7566c-d4b6-47d3-a51a-e902b7fbcd00" x="134.01" y="16.86" width="42.97" height="12.24"/><rect class="e7a7566c-d4b6-47d3-a51a-e902b7fbcd00" x="134.01" y="32.22" width="42.97" height="12.24"/><rect class="e7a7566c-d4b6-47d3-a51a-e902b7fbcd00" x="134.01" y="1.49" width="21.49" height="42.97"/><polygon class="e7a7566c-d4b6-47d3-a51a-e902b7fbcd00" points="87.97 1.41 130.94 1.41 109.46 44.38 87.97 1.41"/><g class="a300c973-1827-41fc-bec1-aeee56cbd398"><path class="e7a7566c-d4b6-47d3-a51a-e902b7fbcd00" d="M91,23A21.49,21.49,0,1,1,69.56,1.49,21.48,21.48,0,0,1,91,23"/></g><polygon class="e7a7566c-d4b6-47d3-a51a-e902b7fbcd00" points="23.52 22.98 23.52 1.49 2.04 1.49 2.04 44.47 45.01 44.47 45.01 22.98 23.52 22.98"/></g></svg>');
+	background-size:240px 100px;
+	background-repeat:no-repeat;
+	background-position: center 40px;
+	font-size: $site-footer--font-size;
+	line-height: $line-height--medium;
+	text-align: center;
+	color:#ffffff;
+	p {
+		margin-bottom: 0;
+
+	}
+	a{
+		color:#ffffff;
+	}
+}
+
+.tertiary-nav{
+	margin:30px 0;
+	&__lnk{
+		text-decoration: none;
+		display: inline-block;
+    	padding: 0 1em;
+    	position: relative;
+		&:after{
+			content:'';
+			position:absolute;
+			right:0;
+			display:none;
+			width:1px;
+			background-color:#666;
+			height: 1em;
+    		top: 0.2em;
+    		@media only screen and (min-width: $standard-screen-width){
+				display:inline-block;
+    		}
+		}
+
+		&:last-child:after{
+			display:none;
+		}
+	}
+}
